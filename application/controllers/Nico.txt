@@ -1,0 +1,40 @@
+//View
+
+<table>
+	<form method="post" enctype="multipart/form-data" action="posting">
+		<tr><td>Judul</td><td>:</td><td><input type="text" name="judul"  /></td></tr>
+		<tr><td>Upload Gambar</td><td>:</td><td><input type="file" name="userfile" required /></td></tr>
+		<tr><td>Deskripsi Promo</td><td>:</td><td><textarea name="deskripsi" cols="60" rows="10"></textarea></td></tr>
+		<tr><td><input type="submit" value="Upload" name="upload"></td></tr>
+	</form>	
+</table>
+
+//Model
+
+		public function insert(){
+			$data = ['Judul'=>$this->judul, 'Gambar'=>$this->gambar, 'Deskripsi'=>$this->deskripsi]; 
+			$query = $this->db->insert('tb_promo',$data);
+		}
+
+//Controller
+
+		public function posting(){
+				$config['upload_path'] = BASEPATH.'../assets/img/';
+				$config['allowed_types'] = 'gif|jpg|png';
+				$config['max_size'] = '2048';
+				$config['max_width'] = '1366';
+				$config['max_height'] = '768';
+ 
+				$this->load->library('upload', $config);
+				$this->promo->judul = $_POST['judul'];
+				$this->promo->gambar = $_FILES['userfile']['name'];
+				$this->promo->deskripsi = $_POST['deskripsi'];
+				$this->promo->insert();
+				$upload = $this->upload->do_upload();
+				//if($this->upload->do_upload()){
+					//$data = array('upload_data' => $this->upload->data());
+					redirect('Notif');
+				//}else{
+				//	$this->load->view('notif_pulsa');
+				//}
+		}

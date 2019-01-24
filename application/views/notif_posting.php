@@ -1,0 +1,2 @@
+<h2 align=center>Berhasil Memposting Promo</h2>
+<h4 align=center>Promo berhasil di Posting.<a href='<?php echo base_url('Beranda/promo');?>' target='blank'>Klik di Sini</a> untuk melihat Promo-Promo</h4>

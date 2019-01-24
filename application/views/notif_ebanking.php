@@ -1,0 +1,2 @@
+<h2 align=center>Berhasil Membuat Akun</h2>
+<h4 align=center>Akun berhasil dibuat. Silahkan login untuk menggunakan fasilitas e-banking <a href='<?php echo base_url('E_banking');?>'>Klik di Sini<a></h4>
