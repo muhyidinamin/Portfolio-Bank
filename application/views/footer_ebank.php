@@ -3,7 +3,7 @@
         </div>
         
         <div id="footer">
-            Copyright &copy; design by. eBanking
+            Copyright &copy; design by. Central Bank
         </div>
         </div>
     </body>

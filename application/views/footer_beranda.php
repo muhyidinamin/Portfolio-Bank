@@ -4,7 +4,7 @@
         </div>
         
         <div id="footer">
-            Copyright &copy; design by. Rumah duit
+            Copyright &copy; design by. Central Bank
         </div>
         </div>
     </body>

@@ -14,19 +14,19 @@
     }
 ?>
 <div id="formlog">
-<center><h3>LOGIN E-BANK</h3></center>
-<hr/>
-<form action="E_banking/login_proses" method="post" name="Login_Form">       
-    <label><b>Username</b></label><br>
-    <input type="text" placeholder="Enter Username" name="username" required><br>
+    <center><h3>LOGIN E-BANK</h3></center>
+    <hr/>
+    <form action="E_banking/login_proses" method="post" name="Login_Form">       
+        <label><b>Username</b></label><br>
+        <input type="text" placeholder="Enter Username" name="username" required><br>
 
-    <label><b>Password</b></label><br>
-    <input type="password" placeholder="Enter Password" name="password" required><br>
-    <input type='submit' name='submit' value='Login'>
-</form>
-<span class="error"><strong>
-   <?php echo $pesan; ?>
-    </strong></span>
+        <label><b>Password</b></label><br>
+        <input type="password" placeholder="Enter Password" name="password" required><br>
+        <input type='submit' name='submit' value='Login'>
+    </form>
+    <span class="error"><strong>
+       <?php echo $pesan; ?>
+        </strong></span>
 </div>
 
 <br><br>

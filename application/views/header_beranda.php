@@ -9,12 +9,12 @@
     <body>
     <div id="kulit">
         <div id="header">
-            <h1><a href="index.php"><img src="<?php echo base_url();?>assets/img/cb.png" alt="Centralbank" style="width:400px;height:100px;"></a></h1>	
+            <h1><a href="<?php echo base_url('Beranda/index'); ?>"><img src="<?php echo base_url();?>assets/img/cb.png" alt="Centralbank" style="width:400px;height:100px;"></a></h1>	
         </div>
 
         <div id="navbar">
             <ul>
-              <li><a href="index.php">Home</a></li>
+              <li><a href="index">Home</a></li>
 				<li class="dropdown" style="float:left;">
 				<a href="#" class="dropbtn">Produk & Layanan</a>
 				<div class="dropdown-content">

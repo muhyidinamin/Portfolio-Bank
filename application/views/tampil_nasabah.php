@@ -1,7 +1,4 @@
-<form action="tampil_search" method="post">
-	<label>Search Nasabah </label> : <input type="text" name="search"></input><input type="submit" name="search" value="search"></input>
 
-</form>
 <table cellpadding=3px cellspacing=1px border=1px>
 	<tr>
 		<th>No KTP</th>

@@ -12,6 +12,7 @@
 
 		public function index(){
 			$this->load->view('header_beranda');
+			$this->load->view('homepage');
 			$this->load->view('footer_beranda');
 		}
 
